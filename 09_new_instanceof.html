@@ -7,7 +7,9 @@
 </head>
 <body>
   <script>
-
+    /* 
+    功能等同于new的工具函数
+     */
     function newInstance(Fn, ...args) {
       // 创建一个新的对象
       const obj = {}
@@ -41,7 +43,7 @@
 
   <script>
     /* 
-    instanceOf函数的功能等同于 instanceof
+    功能等同于instanceof的工具函数
      */
     function instanceOf(instance, Type) {
       while(instance.__proto__) {
