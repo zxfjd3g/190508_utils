@@ -3,21 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>模拟new创建实例对象</title>
+  <title>自定义new与instanceof工具函数</title>
 </head>
 <body>
-  <script>
-    function newInstance(Fn, ...args) {
-      const instance = {}
-      instance.__proto__ = Fn.protype
-      const result = Fn.apply(instance, args)
-      if (result instanceof Object) {
-        return result
-      }
-      return instance
-    }
-  </script>
-
   <script>
 
     function newInstance(Fn, ...args) {
